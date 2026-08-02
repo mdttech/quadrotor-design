@@ -118,11 +118,6 @@ Component availability drove the final build away from the theoretical optimum.
 
 Frame: symmetric X configuration, 3 mm sandwich plates with integrated arm clamps, 12 mm OD aluminium tube arms, gusseted motor mounts. Load path runs motor → mount → arm → clamp → base plate → centre structure.
 
-<!-- TODO: add CAD renders -->
-| Assembly | Bottom plate | Motor mount |
-|---|---|---|
-| ![](cad/renders/assembly_iso.png) | ![](cad/renders/bottom_plate.png) | ![](cad/renders/motor_mount.png) |
-
 ---
 
 ## 📊 Results
