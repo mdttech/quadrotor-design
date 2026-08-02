@@ -1,6 +1,18 @@
 # 🚁 Quadrotor Design
 ## Design, Optimization, and Fabrication of a Quadrotor
 
+![MATLAB](https://img.shields.io/badge/MATLAB-R2020b%2B-0076A8)
+![BEMT](https://img.shields.io/badge/Method-BEMT-4a9d5f)
+![SolidWorks](https://img.shields.io/badge/CAD-SolidWorks-e31937)
+![Payload](https://img.shields.io/badge/Payload-300%20g-f5a623)
+![AUW](https://img.shields.io/badge/AUW-1237%20g-6a5acd)
+![Endurance](https://img.shields.io/badge/Endurance-15%20min-c94f4f)
+![License](https://img.shields.io/badge/License-MIT-brightgreen)
+![Rotors](https://img.shields.io/badge/Rotors-4%20%C3%97%207in-708090)
+![Battery](https://img.shields.io/badge/Battery-4S%20Li--ion-2e8b57)
+![Disc Loading](https://img.shields.io/badge/Disc%20Loading-122%20N%2Fm%C2%B2-8b7355)
+![Status](https://img.shields.io/badge/Status-Built%20%26%20Tested-success)
+
 **Conceptual design, optimization, and fabrication of a 300 g payload / 20 min endurance quadrotor**
 
 A MATLAB sizing tool built on Blade Element Momentum Theory coupled to empirical component-weight regressions, taken from mission requirements through parametric optimization, hardware selection, CAD, fabrication, and bench validation.
