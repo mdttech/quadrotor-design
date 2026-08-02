@@ -7,7 +7,7 @@ A MATLAB sizing tool built on Blade Element Momentum Theory coupled to empirical
 
 Course project — AE630, Autonomous Unmanned Aerial Systems.
 
-![Quadrotor hover test]()
+![Quadrotor hover test](media/team3_ae630.jpeg)
 
 <!-- TODO: replace with your own GIF. See media/README.md for how to make one. -->
 
