@@ -259,7 +259,7 @@ Group 3 — AE630, Department of Aerospace Engineering, IIT Kanpur
 ## ✍️ Author
 
 **Tahseen Aslam**
-M.Tech, Department of Aerospace Engineering (UAS — Autonomy)
+M.Tech, Department of Aerospace Engineering (UAS — Autonomy),
 Indian Institute of Technology Kanpur
 
 [![GitHub](https://img.shields.io/badge/GitHub-@mdttech-181717?logo=github)](https://github.com/mdttech)
