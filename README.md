@@ -1,4 +1,4 @@
-# Quadrotor Design
+# 🚁 Quadrotor Design
 ## Design, Optimization, and Fabrication of a Quadrotor
 
 **Conceptual design, optimization, and fabrication of a 300 g payload / 20 min endurance quadrotor**
@@ -7,13 +7,15 @@ A MATLAB sizing tool built on Blade Element Momentum Theory coupled to empirical
 
 Course project — AE630, Autonomous Unmanned Aerial Systems.
 
-![Quadrotor hover test](media/team3_ae630.jpeg)
+**Supervisor:** Prof. Abhishek
+Department of Aerospace Engineering, Helicopter and VTOL Laboratory
+Indian Institute of Technology Kanpur, Kanpur 208016, India
 
-<!-- TODO: replace with your own GIF. See media/README.md for how to make one. -->
+![Quadrotor hover test](media/team3_ae630.jpeg)
 
 ---
 
-## Mission
+## 🛩️ Mission
 
 | Requirement | Value |
 |---|---|
@@ -27,7 +29,7 @@ Course project — AE630, Autonomous Unmanned Aerial Systems.
 
 ---
 
-## Approach
+## ⚙️ Approach
 
 The design closes on gross takeoff weight through a fixed-point iteration. Every component mass depends on power, power depends on thrust, and thrust depends on the weight you are trying to find — so the loop is run to convergence for every candidate configuration in a parametric sweep.
 
@@ -60,11 +62,9 @@ The design closes on gross takeoff weight through a fixed-point iteration. Every
 
 **Key modeling note.** With fixed-pitch blades and a linear lift-curve slope, C_T is a property of blade geometry alone and does not vary with rotor speed. This lets the BEMT solver run **once** per geometry at a reference RPM; hover conditions then follow analytically from T ∝ Ω² and P ∝ Ω³. That is what makes a full six-dimensional sweep tractable — thousands of candidate designs converge in seconds instead of hours.
 
-**Weight model.** Component masses use the log–log multivariable regressions of Winslow, Hrishikeshavan & Chopra, *Design Methodology for Small-Scale Unmanned Quadrotors*, Journal of Aircraft (2018), [DOI: 10.2514/1.C034483](https://doi.org/10.2514/1.C034483). Their reported accuracy is ±10% per weight group and ±4% on GTOW, validated against quadrotors from 30–1000 g.
-
 ---
 
-## Design space
+## 📐 Design space
 
 Six parameters were swept, with the loop run to convergence at every point:
 
@@ -95,14 +95,13 @@ Note that solidity is **not** independent: σ = N_b·c/πR and AR = R/c give σ 
 | Kv | 3000 | 1800 | 1300 |
 | P_max/motor (W) | 47.3 | 117.9 | 72.3 |
 
-**Config 1** is the mathematical optimum and physically unbuildable — a 12 g motor lacks the stator volume to drive a 7-inch propeller without thermal failure. **Config 2** trades into a punishing 16 700 RPM hover. **Config 3** is the realistic middle ground and became the basis for hardware selection.
+**Config 1** is the mathematical optimum and physically unbuildable — a 12 g motor lacks the stator volume to drive a 7-inch propeller without thermal failure. **Config 2** trades into a punishing 16 700 RPM hover. 
+**Config 3** is the realistic middle ground and became the basis for hardware selection.
 
-<!-- TODO: add your sweep figures -->
-![Parameter sensitivity](results/figures/parameter_sweep.png)
 
 ---
 
-## As-built vehicle
+## 🔧 As-built vehicle
 
 Component availability drove the final build away from the theoretical optimum.
 
@@ -126,7 +125,7 @@ Frame: symmetric X configuration, 3 mm sandwich plates with integrated arm clamp
 
 ---
 
-## Results
+## 📊 Results
 
 Bench thrust testing against the built vehicle:
 
@@ -151,35 +150,37 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 
 ---
 
-## Repository structure
+## 📁 Repository structure
 
 ```
 .
 ├── src/
-│   ├── bemt/                  BEMT solver, inflow, tip-loss
-│   ├── sizing/                convergence loop, weight regressions, sweeps
-│   └── utils/                 plotting and table helpers
+│   ├── uav_sizing.mlx              Weight convergence loop + parametric sweep
+│   ├── bemt_gaussian_quad.mlx      BEMT solver, 6-point Gaussian quadrature
+│   └── bemt_trapezoidal.mlx        BEMT solver, trapezoidal integration
 ├── results/
-│   ├── figures/               sweep plots, sensitivity studies
-│   ├── sweep_results.csv      full converged design table
-│   └── final_design_spec.md   as-built specification
+│   └── design_Data.csv             Full converged design table from the sweep
 ├── cad/
-│   └── renders/               SolidWorks screenshots and renders
-├── hardware/
-│   ├── BOM.md                 bill of materials with sources
-│   └── motor_test_data.csv    bench thrust stand measurements
+│   ├── Quadcopter assembly.jpg
+│   ├── top plate.jpg               ├── top plate with dim.jpg
+│   ├── bottom plate.jpg            ├── bottom plate with dim.jpg
+│   ├── arms.jpg                    ├── arms with dim.jpg
+│   └── motor mount.jpg             └── motor mount with dim.jpg
 ├── media/
-│   ├── images/                build and test photographs
-│   └── videos/                flight and bench test footage
-├── docs/
-│   ├── project_report.pdf     full written report
-│   └── assignment_brief.pdf   original problem statement
+│   ├── quadcopter_assembeled_v1.jpg
+│   ├── quadcopter_assembeled_v2.jpg
+│   ├── team3_ae630.jpeg
+│   ├── initial_testing.mp4
+│   ├── testing_without_payload.mp4
+│   └── testing_with_payload.mp4
+├── hardware/                       (BOM — not yet added)
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## Running the code
+## 💻 Running the code
 
 Requires MATLAB R2020b or newer. No toolboxes beyond base MATLAB.
 
@@ -201,19 +202,26 @@ disp(result.GTOW)
 
 ---
 
-## Media
+## 📸 Media
 
-<!-- TODO: fill in -->
+### CAD table
+
+| Assembly | Bottom plate | Motor mount |
+|---|---|---|
+| ![](cad/Quadcopter%20assembly.jpg) | ![](cad/bottom%20plate.jpg) | ![](cad/motor%20mount.jpg) |
+
+### Media table
+
 | | |
 |---|---|
-| ![](media/images/build_01.jpg) | ![](media/images/thrust_stand.jpg) |
-| Assembly | Thrust stand testing |
+| ![](media/quadcopter_assembeled_v1.jpg) | ![](media/quadcopter_assembeled_v2.jpg) |
+| Assembled vehicle | Alternate view |
 
-Flight and bench test footage is in [`media/videos/`](media/videos/).
+Test footage: [initial testing](media/initial_testing.mp4) · [without payload](media/testing_without_payload.mp4) · [with payload](media/testing_with_payload.mp4)
 
 ---
 
-## References
+## 📚 References
 
 1. Winslow, J., Hrishikeshavan, V., and Chopra, I., "Design Methodology for Small-Scale Unmanned Quadrotors," *Journal of Aircraft*, 2018. [DOI: 10.2514/1.C034483](https://doi.org/10.2514/1.C034483)
 2. Leishman, J. G., *Principles of Helicopter Aerodynamics*, 2nd ed., Cambridge University Press, 2006.
@@ -221,9 +229,17 @@ Flight and bench test footage is in [`media/videos/`](media/videos/).
 
 ---
 
-## Team
+## 👥 Team
 
-Group 3, AE630 — <!-- TODO: list names, or link GitHub profiles -->
+Group 3 — AE630, Department of Aerospace Engineering, IIT Kanpur
+
+| Name | Roll No. |
+|---|---|
+| Md Tahseen Aslam | 251010069 |
+| Divyansh Singh | 251010064 |
+| Magesvar V R | 251010068 |
+| Swagat Kumar Jena | 251010073 |
+| Pradeep Kumar | 251010071 |
 
 ## License
 
