@@ -182,23 +182,33 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 
 ## 💻 Running the code
 
-Requires MATLAB R2020b or newer. No toolboxes beyond base MATLAB.
+Requires MATLAB R2020b or newer. No additional toolboxes. All files are MATLAB
+Live Scripts (`.mlx`) — open them in the MATLAB editor and use **Run** to execute
+section by section with inline output and figures.
 
-```matlab
-cd src/sizing
-run_parameter_sweep        % full design space sweep → results/sweep_results.csv
-plot_sensitivity           % regenerate all figures in results/figures/
-size_single_design         % converge one configuration and print its spec table
-```
+| File | Purpose |
+|---|---|
+| `src/uav_sizing.mlx` | Main design tool. Runs the weight-convergence loop across the full parameter sweep and writes `results/design_Data.csv`. |
+| `src/bemt_gaussian_quad.mlx` | BEMT solver using 6-point Gaussian quadrature over 10 blade elements. |
+| `src/bemt_trapezoidal.mlx` | Same solver using trapezoidal integration (200+ points), for cross-checking the quadrature result. |
 
-To size a single point directly:
+**To reproduce the design study:**
 
-```matlab
-design = struct('R', 0.09, 'theta0', 22, 'AR', 8, 'Nb', 2, ...
-                'cells', 4, 'Kv', 1300, 'payload', 0.300, 'endurance', 20);
-result = sizing_loop(design);
-disp(result.GTOW)
-```
+1. Open `src/uav_sizing.mlx`
+2. Adjust the sweep ranges in the *Parameter Sweep Setup* section if desired
+3. **Run All** — the sweep converges every candidate configuration and prints the
+   optimal design specification table
+4. Results are written to `results/design_Data.csv` and the sensitivity plots are
+   generated inline
+
+**To check the BEMT solver independently:** run either `bemt_gaussian_quad.mlx` or
+`bemt_trapezoidal.mlx`. Both take the same rotor geometry and return thrust, power,
+and the spanwise inflow, pitch, and loading distributions. Agreement between the two
+integration schemes confirms adequate spanwise resolution.
+
+> **Note on GitHub rendering:** `.mlx` files are binary and will not preview in the
+> browser. Download and open them in MATLAB, or export to `.m` if you want the code
+> readable directly on GitHub.
 
 ---
 
