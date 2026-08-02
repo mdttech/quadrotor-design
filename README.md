@@ -114,7 +114,8 @@ Component availability drove the final build away from the theoretical optimum.
 | Frame | Custom, aluminium tube arms | 1 | 220 g |
 | Avionics & wiring | Pixhawk, GPS, harness | — | 150 g |
 | Payload | — | — | 300 g |
-| **All-up weight** | | | **≈ 1237 g** |
+| **All-up weight(without payload)** | | | **≈ 937 g** |
+| **All-up weight(with payload)** | | | **≈ 1237 g** |
 
 Frame: symmetric X configuration, 3 mm sandwich plates with integrated arm clamps, 12 mm OD aluminium tube arms, gusseted motor mounts. Load path runs motor → mount → arm → clamp → base plate → centre structure.
 
