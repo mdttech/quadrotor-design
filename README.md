@@ -7,7 +7,7 @@ A MATLAB sizing tool built on Blade Element Momentum Theory coupled to empirical
 
 Course project — AE630, Autonomous Unmanned Aerial Systems.
 
-**Supervisor:** Prof. Abhishek
+**Supervisor:** Prof. Abhishek, 
 Department of Aerospace Engineering, Helicopter and VTOL Laboratory
 Indian Institute of Technology Kanpur, Kanpur 208016, India
 
