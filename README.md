@@ -253,6 +253,21 @@ Group 3 — AE630, Department of Aerospace Engineering, IIT Kanpur
 | Swagat Kumar Jena | 251010073 |
 | Pradeep Kumar | 251010071 |
 
+---
+
+
+## ✍️ Author
+
+**Tahseen Aslam**
+M.Tech, Department of Aerospace Engineering (UAS — Autonomy)
+Indian Institute of Technology Kanpur
+
+[![GitHub](https://img.shields.io/badge/GitHub-@mdttech-181717?logo=github)](https://github.com/mdttech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-tahseen-0A66C2?logo=linkedin)](https://www.linkedin.com/in/ttech-mdta)
+
+
+---
+
 ## License
 
 Code released under the MIT License. See [LICENSE](LICENSE).
