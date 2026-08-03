@@ -175,7 +175,7 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 │   ├── initial_testing.mp4
 │   ├── testing_without_payload.mp4
 │   └── testing_with_payload.mp4
-├── hardware/                       (BOM — not yet added)
+├── hardware/                       
 ├── LICENSE
 └── README.md
 ```
