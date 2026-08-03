@@ -22,15 +22,15 @@ pack-limited to roughly 900 g/motor, still ~3× hover.
 
 ## Avionics
 
-<!-- TODO: fill in actual parts and measured masses -->
 
 | Item | Part | Qty | Unit mass | Total |
 |---|---|---|---|---|
-| Flight controller | Pixhawk | 1 | | |
-| GPS | | 1 | | |
-| Receiver | | 1 | | |
-| Wiring harness | | 1 | | |
-| Power module | | 1 | | |
+| Flight controller | Pixhawk (with case) | 1 | 38 g *est.* | 38 g |
+| Receiver | 2.4 GHz RC receiver | 1 | 10 g *est.* | 10 g |
+| Power module | Voltage/current sense module | 1 | 22 g *est.* | 22 g |
+| Wiring harness | Silicone wire, XT60, connectors | 1 | 40 g *est.* | 40 g |
+| Mounting hardware | Damping pads, straps, standoffs, zip ties, etc | — | 40 g *est.* | 40 g |
+| **Subtotal** | | | | **150 g** |
 
 ## Structure
 
