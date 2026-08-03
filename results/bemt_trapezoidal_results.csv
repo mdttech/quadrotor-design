@@ -1,0 +1,55 @@
+Question,Metric,Case,Value
+Q1(a),Theta75 (deg),Ideal twist,6.60428867747411
+Q1(a),Achieved Thrust (N),Ideal twist,299.999999654937
+Q1(a),Theta75 (deg),No twist,7.10652383503065
+Q1(a),Achieved Thrust (N),No twist,300.000000280284
+Q1(a),Theta75 (deg),Linear -15 deg,6.78435870634309
+Q1(a),Achieved Thrust (N),Linear -15 deg,299.999803011647
+Q1(a),Theta75 (deg),Ideal + taper,8.11818303121888
+Q1(a),Achieved Thrust (N),Ideal + taper,299.999982030694
+Q1(b),Max Alpha (deg),Ideal twist,12.5967037400192
+Q1(b),Min Alpha (deg),Ideal twist,2.51934074800384
+Q1(b),Max Alpha (deg),No twist,4.02873253447161
+Q1(b),Min Alpha (deg),No twist,2.11730969178404
+Q1(b),Max Alpha (deg),Linear -15 deg,23.2510089341919
+Q1(b),Min Alpha (deg),Linear -15 deg,-7.03998626955895
+Q1(b),Max Alpha (deg),Ideal + taper,16.5108338243052
+Q1(b),Min Alpha (deg),Ideal + taper,3.93718053874446
+Q1(c),Lambda at 0.75,Ideal twist,0.042479145598255
+Q1(c),Max Lambda,Ideal twist,0.0424791455982551
+Q1(c),Min Lambda,Ideal twist,0.042479145598255
+Q1(c),Lambda at 0.75,No twist,0.0445607305779271
+Q1(c),Max Lambda,No twist,0.0537175918839936
+Q1(c),Min Lambda,No twist,0.0174156427773443
+Q1(c),Lambda at 0.75,Linear -15 deg,0.0433764701135766
+Q1(c),Max Lambda,Linear -15 deg,0.0712630331064933
+Q1(c),Min Lambda,Linear -15 deg,-0.0205190510381226
+Q1(c),Lambda at 0.75,Ideal + taper,0.0417091673443639
+Q1(c),Max Lambda,Ideal + taper,0.0486330848839729
+Q1(c),Min Lambda,Ideal + taper,0.0375500037341923
+Q1(d),Total C_T,Ideal twist,0.00346459739665488
+Q1(d),Total C_Q,Ideal twist,0.000218678546484179
+Q1(d),Profile C_Qp,Ideal twist,7.1505409232341e-05
+Q1(d),Induced C_Qi,Ideal twist,0.000147173137251838
+Q1(d),Total C_T,No twist,0.0034645974038768
+Q1(d),Total C_Q,No twist,0.000227620948958673
+Q1(d),Profile C_Qp,No twist,7.1505409232341e-05
+Q1(d),Induced C_Qi,No twist,0.000156115539726332
+Q1(d),Total C_T,Linear -15 deg,0.00346459512568878
+Q1(d),Total C_Q,Linear -15 deg,0.00037826152857315
+Q1(d),Profile C_Qp,Linear -15 deg,7.1505409232341e-05
+Q1(d),Induced C_Qi,Linear -15 deg,0.000306756119340809
+Q1(d),Total C_T,Ideal + taper,0.00346459719311853
+Q1(d),Total C_Q,Ideal + taper,0.000192937372650412
+Q1(d),Profile C_Qp,Ideal + taper,4.46449443355636e-05
+Q1(d),Induced C_Qi,Ideal + taper,0.000148292428314848
+Q2,Theta75 (deg),No Tip Loss,7.10652382999121
+Q2,Theta75 (deg),With Tip Loss,6.84092202459278
+Q2,Achieved Thrust (N),No Tip Loss,300
+Q2,Achieved Thrust (N),With Tip Loss,300
+Q2,Lambda at 0.75,No Tip Loss,0.044560730557146
+Q2,Lambda at 0.75,With Tip Loss,0.0433998945509069
+Q2,dCTdr at 0.75,No Tip Loss,0.00595199953511963
+Q2,dCTdr at 0.75,With Tip Loss,0.00566747662946359
+Q2,Total C_Q at R,No Tip Loss,0.000227620948741005
+Q2,Total C_Q at R,With Tip Loss,0.000211600841147351

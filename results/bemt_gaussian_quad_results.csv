@@ -1,0 +1,23 @@
+Question,Metric,Case,Value
+Q1(a),Theta Tip (deg),ideal,4.95321654074324
+Q1(a),Achieved Thrust (N),ideal,300.000002275538
+Q1(a),Theta Tip (deg),no,7.10653051991984
+Q1(a),Achieved Thrust (N),no,299.999699313163
+Q1(a),Theta Tip (deg),linear,2.55732086192336
+Q1(a),Achieved Thrust (N),linear,299.99987164021
+Q1(a),Theta Tip (deg),ideal_taper,6.08863385302523
+Q1(a),Achieved Thrust (N),ideal_taper,300.000018262272
+Q1(b),Max Alpha (deg),ideal,12.5967038500557
+Q1(b),Min Alpha (deg),ideal,2.51934077001114
+Q1(b),Max Alpha (deg),no,4.02873737165397
+Q1(b),Min Alpha (deg),no,2.1173127607864
+Q1(b),Max Alpha (deg),linear,7.97086580946058
+Q1(b),Min Alpha (deg),linear,1.01356069617108
+Q1(b),Max Alpha (deg),ideal_taper,16.5108217969069
+Q1(b),Min Alpha (deg),ideal_taper,3.93717785234251
+Q1(c),Lambda at 0.75,ideal,0.0424791457837899
+Q1(c),Lambda at 0.75,no,0.0446309994191995
+Q1(c),Lambda at 0.75,linear,0.0451096331158343
+Q1(c),Lambda at 0.75,ideal_taper,0.0416821723392954
+Q2,Theta75 (no twist) with Tip Loss (deg),no_twist_tiploss,6.84521975547117
+Q2,Diff from Q1 no-twist (deg),comparison,-0.26131076444867

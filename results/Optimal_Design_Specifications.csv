@@ -1,0 +1,20 @@
+Optimal_Design_Parameter,Calculated_Value,Unit
+Minimum GTOW,816.40,grams
+Payload,300.00,grams
+Frame Weight,224.68,grams
+Battery Weight,163.54,grams
+Motor Weight (Each),11.71,grams
+Rotor Weight (Each),4.36,grams
+ESC Weight (Each),3.28,grams
+Rotor Radius,0.090,m
+Chord,0.015,m
+Aspect Ratio,6,-
+Number of Blades,2,-
+Root Pitch (theta0),26,deg
+Battery Cells,3,S
+Battery Voltage,11.1,V
+Hover RPM,7849,RPM
+Disc Loading,78.68,N/m^2
+Motor Kv Rating,3000,RPM/V
+Max Power (per motor),47.31,Watts
+Max Current (per ESC),4.26,Amps
