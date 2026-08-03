@@ -157,25 +157,38 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 ```
 .
 ├── src/
-│   ├── uav_sizing.mlx              Weight convergence loop + parametric sweep
-│   ├── bemt_gaussian_quad.mlx      BEMT solver, 6-point Gaussian quadrature
-│   └── bemt_trapezoidal.mlx        BEMT solver, trapezoidal integration
+│   ├── uav_sizing.mlx                  Weight convergence loop + parametric sweep
+│   ├── bemt_gaussian_quad.mlx          BEMT solver, 6-point Gaussian quadrature
+│   └── bemt_trapezoidal.mlx            BEMT solver, trapezoidal integration
+│
 ├── results/
-│   └── design_Data.csv             Full converged design table from the sweep
+│   └── design_Data.csv                 Full converged design table from the sweep
+│
 ├── cad/
-│   ├── Quadcopter assembly.jpg
-│   ├── top plate.jpg               ├── top plate with dim.jpg
-│   ├── bottom plate.jpg            ├── bottom plate with dim.jpg
-│   ├── arms.jpg                    ├── arms with dim.jpg
-│   └── motor mount.jpg             └── motor mount with dim.jpg
+│   ├── cad_files/                      Native SolidWorks parts, drawings, STEP exports
+│   │   ├── Top_Plate.SLDPRT / .SLDDRW / .STEP
+│   │   ├── Bottom_Plate.SLDPRT / .SLDDRW / .STEP
+│   │   ├── Part_Arm.SLDDRW
+│   │   └── Part_Motor_Mount_final.SLDDRW
+│   └── render_images/                  Isometric GIFs and dimensioned views
+│       ├── Quadcopter assembly.jpg
+│       ├── top_plate_iso.gif           ├── Top Plate.jpg / top plate with dim.jpg
+│       ├── bottom_plate_iso.gif        ├── bottom plate.jpg / bottom plate with dim.jpg
+│       ├── motor_mount_iso.gif         ├── motor mount.jpg / motor mount with dim.jpg
+│       └── arms_iso.gif                └── arms.jpg / arms with dim.jpg
+│
+├── hardware/
+│   ├── BOM.md                          Bill of materials with measured masses
+│   └── hardware_sheet.xlsx             Component selection trade study
+│
 ├── media/
-│   ├── quadcopter_assembeled_v1.jpg
+│   ├── quadcopter_assembeled_v1.jpg    Assembled vehicle
 │   ├── quadcopter_assembeled_v2.jpg
 │   ├── team3_ae630.jpeg
-│   ├── initial_testing.mp4
+│   ├── initial_testing.mp4             Bench and flight test footage
 │   ├── testing_without_payload.mp4
 │   └── testing_with_payload.mp4
-├── hardware/                       
+│
 ├── LICENSE
 └── README.md
 ```
