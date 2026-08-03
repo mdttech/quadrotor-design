@@ -218,9 +218,11 @@ integration schemes confirms adequate spanwise resolution.
 
 ### CAD table
 
-| Assembly | Bottom plate | Motor mount |
-|---|---|---|
-| ![](cad/Quadcopter%20assembly.jpg) | ![](cad/bottom%20plate.jpg) | ![](cad/motor%20mount.jpg) |
+![Quadcopter assembly](cad/render_images/Quadcopter%20assembly.jpg)
+
+| Top plate | Bottom plate | Motor mount | Arms |
+|:---:|:---:|:---:|:---:|
+| ![](cad/render_images/top_plate_iso.gif) | ![](cad/render_images/bottom_plate_iso.gif) | ![](cad/render_images/motor_mount_iso.gif) | ![](cad/render_images/arms_iso.gif) |
 
 ### Media table
 
