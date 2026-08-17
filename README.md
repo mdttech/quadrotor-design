@@ -1,4 +1,4 @@
-# 🚁 Quadrotor Design
+# 🚁 Weight Optimized Quadrotor Design
 ## Design, Optimization, and Fabrication of a Quadrotor
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2020b%2B-0076A8)
