@@ -152,6 +152,29 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 
 ---
 
+## 🌀 Propeller Testing
+
+Bench validation of the propeller/motor/ESC combination used on the as-built vehicle, run independently of the full-vehicle thrust test in the Results section above. ESC PWM signal was logged over time at a series of fixed throttle points, mapped to RPM via a calibration curve, and combined with measured thrust/current/voltage to derive mechanical power, Figure of Merit, C_T, and system efficiency across the RPM range.
+
+| Folder | Contents |
+|---|---|
+| `propeller_testing/data/` | Raw ESC-signal logs (`Log_*.csv`), per-RPM-setpoint time series (`RPM_*.csv`), the averaged summary (`RPM_Summary_Averaged.csv`/`.xlsx`), and the combined performance table (`Final_Data.csv`) |
+| `propeller_testing/scripts/` | `plot_logs.py` (ESC signal → RPM calibration and time-series plots) and `plot_final_performance.py` (thrust, power, FOM, C_T, and efficiency vs RPM) |
+| `propeller_testing/results/` | Generated plots from both scripts |
+
+Run from inside `propeller_testing/`:
+
+```
+python scripts/plot_logs.py
+python scripts/plot_final_performance.py
+```
+
+| Thrust vs RPM | Figure of Merit vs Thrust |
+|:---:|:---:|
+| ![](propeller_testing/results/thrust_vs_rpm.png) | ![](propeller_testing/results/fom_vs_thrust.png) |
+
+---
+
 ## 📁 Repository structure
 
 ```
@@ -180,6 +203,11 @@ Net: the sizing model was roughly **1.8× optimistic on hover efficiency**. Clos
 ├── hardware/
 │   ├── BOM.md                          Bill of materials with measured masses
 │   └── hardware_sheet.xlsx             Component selection trade study
+│
+├── propeller_testing/
+│   ├── data/                           Raw ESC logs, per-RPM CSVs, averaged summary, combined performance table
+│   ├── scripts/                        plot_logs.py, plot_final_performance.py
+│   └── results/                        Generated plots (thrust, power, FOM, C_T, efficiency vs RPM)
 │
 ├── media/
 │   ├── quadcopter_assembeled_v1.jpg    Assembled vehicle
